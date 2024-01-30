@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family : 'Poppins',sans-serif;
+}
+    
+body { 
+    background-color: #000000;  
+    background-image: url("img2.jpg");
+    background-position:inherit;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+
+nav{
+    margin-left: 20%;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(5, 4, 4, 0.4);
+}
+
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 1s;
+}
+
+nav ul li::after{
+    content: '';
+    background: pink;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s ,opacity 0.5s;
+}
+
+nav ul li:hover{
+    color: white;
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+li{
+    list-style:  none;
+}
+
+.Edu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.ttl{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.Inst{
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+.DT{
+    margin-left: 20px;
+    font-weight: 500;
+    color: #777;
+}
+
+.Ski{
+    margin-left: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #777;
+}
+
+.Res{
+    display: inline-block;
+    padding: 13px;
+    margin: 10px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #777;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.li1{
+    display: inline-block;
+    margin : 10px ;
+    margin-top: 40px;
+    padding: 13px 35px;
+    color: white;
+    background: pink;
+    border-radius: 50%;
+}
+
+.li2{
+    display: inline-block;
+    margin : 10px ;
+    margin-top: 40px;
+    padding: 13px 35px;
+    color: white;
+    background: pink;
+    border-radius: 50%;
+}
+
+.li3{
+    display: inline-block;
+    margin : 10px ;
+    margin-top: 40px;
+    padding: 13px 35px;
+    color: white;
+    background: pink;
+    border-radius: 50%;
+}
